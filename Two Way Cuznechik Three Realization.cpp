@@ -2,7 +2,7 @@
 #include <map>
 #include <string>
 #include <vector>
-
+// Кузнечик прыгает по кувшинам может передвигаться на 1 клетку или 2
 using namespace std;
 map<int, long long int>solved; // Хеш-таблица для мемоизации наших данных
 int cuzcounter = 0;
@@ -43,7 +43,9 @@ long long int cuz3(int i)
 }
 
 int main(){
-   cout<<cuz3(16)<<" cuz3counter = "<<cuz3counter<<" Динамическая реализация\n";
-   cout<<cuz2(16)<<" cuz2counter = "<<cuz2counter<<" Рекурсия с мемоизацией\n";
-   cout<<cuz(16)<<" cuzcounter = "<<cuzcounter<<" Рекурсия";
+   int cl;
+   cin>>cl;
+   cout<<cuz3(cl)<<" cuz3counter = "<<cuz3counter<<" Динамическая реализация\n";
+   cout<<cuz2(cl)<<" cuz2counter = "<<cuz2counter<<" Рекурсия с мемоизацией\n";
+   cout<<cuz(cl)<<" cuzcounter = "<<cuzcounter<<" Рекурсия";
 }
